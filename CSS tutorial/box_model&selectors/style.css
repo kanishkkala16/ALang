@@ -1,0 +1,55 @@
+/* CSS HEX */
+:root {
+    --jasper: #c84630ff;
+    --rosy-brown: #d4a0a7ff;
+    --platinum: #e3e3e3ff;
+    --battleship-gray: #898989ff;
+    --jade: #5da271ff;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    font-size: 3rem;
+}
+
+body
+{
+    /* font-size: 20px;
+    background-color: #ffefd5;
+    border: 5px dashed blue; */
+    color: var(--jasper);
+
+
+}
+
+.container
+{
+    border: 8px double var(--rosy-brown);
+    color: var(--jade);
+    font-size: 1.5rem;
+    padding: 1.5em;
+    margin: 1.5em;
+    outline: 3px solid var(--jasper);
+    outline-offset: -15px;
+}
+
+p{
+    color: #333;
+}
+
+.circle{
+    border: 5px solid red;
+    margin: 2em auto;
+    height: 100px;
+    width: 100px;
+    color: black;
+    background: gold;
+    border-radius: 50%;
+    padding: 1.21em;
+
+}

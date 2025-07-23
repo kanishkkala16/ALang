@@ -1,0 +1,47 @@
+/* typography is the way text is arranged and presented */
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+body{
+    padding: 10%;
+    font-size: 2rem;
+    background-color: papayawhip;
+    font-family: "Oswald", sans-serif;
+}
+
+
+input, button{
+    font-size: inherit;
+}
+
+/*
+p{  
+    text-align:justify;
+    line-height: 1.5;
+    letter-spacing: .01em;
+}
+
+.container{
+    border: 3px solid maroon;
+    padding: .25em;
+} */
+
+
+a{  
+    text-decoration: none;
+    color: hsl(240, 100%, 50%);
+    cursor:pointer;
+}
+
+a:visited{
+    color: green;
+}
+
+a:hover, a:focus{
+    /* cursor: crosshair; */
+    color: hsl(210, 100%, 50%, .8)
+}
+
+a:active{
+    color: red;
+}

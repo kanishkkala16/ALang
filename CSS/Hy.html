@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Tutorial</title>
+    <style>
+        p
+        {
+            color: red !important;
+            background-color: yellow !important;
+        }
+        </style>
+        <link rel="stylesheet" href="Hy.css">
+
+        <!-- the order of precedence in CSS is last come; last put -->
+        <!-- basically the line whhich is last writtten is executed  -->
+</head>
+<body>
+    <p>THis is a CSS tutorial</p>
+    <!-- whatever the css file might say if the paragraph tag itself contains a styling pointing to it then the settings will be according to the one inside the tag first and then the additional stuff will take place from the css file -->
+    <p style="color: red; background-color: bisque;">THis tutorial will teach you everything you need to know about CSS</p>
+    <p>THis tutorial will teach you everything you need to know about CSS</p>
+</body>
+</html>

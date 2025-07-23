@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Lobster&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  min-height: 200vh;
+}
+
+.outer-container {
+  border: 3px dashed #000;
+  width: 75vw;
+  height: 85vh;
+  margin: 40px auto;
+  position: relative;
+}
+
+.inner-container {
+  border: 2px solid #00f;
+  width: 40vw;
+  height: 50vh;
+  margin: 200px auto;
+}
+
+.box {
+  width: 150px;
+  height: 150px;
+  color: #fff;
+  padding: 1rem;
+}
+
+.absolute{
+    background-color: red;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+
+/* # relative to the parent class */
+.relative{
+    background-color: blue;
+    position: relative;
+    top: 200px;
+    left: 100px;
+    z-index: 3;
+
+}
+
+.sticky{
+    background-color: green;
+    position: sticky;
+    top: 10;
+    z-index: 1;
+}
+
+.fixed{
+    position: fixed;
+    background-color: black;
+    z-index: 2;
+    top: 100px;
+
+}
+
+.blue{
+    background-color: blue;
+}
+.red{
+    background-color: red;
+}
+.green{
+    background-color: green;
+}
+
+header, footer{
+    text-align: center;
+    height: 100px;
+    color: #fff;
+}
+
+header{
+    position: sticky;
+    font-size: 5rem;
+    top: 0;
+
+}
+
+section{
+    height: 100vh;
+
+}
+
+footer{
+    background-color: black;
+    font-size: 5rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.social{
+    position: fixed;
+    top: 30%;
+    z-index: 1;
+    padding: 1rem;
+    font-size: inherit;
+}
+
+a{
+    text-decoration: none;
+
+}
+
+a:visited{
+    color: white;
+    
+}

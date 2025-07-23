@@ -1,0 +1,18 @@
+The go run command
+The go run command does in fact compile your code into a binary. However, the
+binary is built in a temporary directory. The go run command builds the binary, exe‐
+cutes the binary from that temporary directory, and then deletes the binary after your
+program finishes. This makes the go run command useful for testing out small pro‐
+grams or using Go like a scripting language.
+
+goimports
+There’s an enhanced version of go fmt available called goimports that also cleans up
+your import statements. It puts them in alphabetical order, removes unused imports,
+and attempts to guess any unspecified imports. Its guesses are sometimes inaccurate,
+so you should insert imports yourself.
+You can download goimports with the command go install golang.org/x/
+tools/cmd/goimports@latest. You run it across your project with the command:
+goimports -l -w .
+The -l flag tells goimports to print the files with incorrect formatting to the console.
+The -w flag tells goimports to modify the files in-place. The . specifies the files to be
+scanned: everything in the current directory and all of its subdirectories.

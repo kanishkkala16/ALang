@@ -1,0 +1,12 @@
+.column{
+    columns: 4 250px;
+    column-rule: 2px solid #333;
+}
+
+p{  
+    border: 2px solid maroon;
+}
+
+.column p{
+    margin-top: 0;
+}

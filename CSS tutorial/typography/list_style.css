@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+
+body{
+    padding: 5% 10%;
+    font-size: 2rem;
+    background-color: papayawhip;
+    font-family: "Oswald", sans-serif;
+}
+
+ol{
+    list-style-type: lower-alpha;
+}
+
+ul{
+    list-style-type: circle;
+    color: #f00;
+    text-align: center;    
+    list-style-position: inside;
+}
+
+ul ::marker{
+    color: blue;
+    content: '>> ';
+}
+
+ol ::marker{
+    content: '- ';
+}

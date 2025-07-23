@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bEFORE AND AFTER PSEUDO SELECTORS</title>
+    <style>
+        body{
+            margin:0;
+            padding:0;
+            background-color: black;
+            color:white;
+        }
+        
+        header::before{
+            content: "";
+            background: url('https://source.unsplash.com/user/erondu/1600x900');
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: .4;
+            top:0;
+            left:0;
+
+        }
+        .navigation{
+            font-size: 20px;
+            display: flex;
+        }
+        section{
+            display: flex;
+            flex-direction: column;
+            margin: 2px 23px;
+            align-items: center;
+            justify-content: center;
+            font-size: 2em;
+            height: 500px;
+        }
+
+        /* section::before{
+            content: "This is a content!";
+        }
+
+        section::after{
+            content: "This is another content";
+        } */
+        li{
+            list-style: none;
+            padding: 20px 19px;
+        }
+
+        p{
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <nav class="navbar">
+                <UL class="navigation">
+                    <LI class="ITEM" id="ITEM1">Home</LI>
+                    <LI class="ITEM" id="ITEM2">About</LI>
+                    <LI class="ITEM" id="ITEM3">Services</LI>
+                    <LI class="ITEM" id="ITEM4">Contact</LI>
+                </UL>
+            </nav>
+        </header>
+            <section>
+                <h3>Welcome to the coding world!</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus, libero? Nostrum recusandae rerum praesentium excepturi officia fugiat tenetur beatae illo?</p>
+            </section>
+    </div>
+    <hr>
+</body>
+
+</html>

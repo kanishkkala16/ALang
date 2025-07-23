@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on selectors</title>
+    <style>
+
+        h1{
+            color: green;
+            border: 2px solid blue;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        div > p{
+            /* this greater than sign means that div ke just andar jo upcoming paragraph hoga uspe yeh saare elements add krdo; uske aur andar agr aur koi paragraph hoga toh usko mt krna */
+            /* if p is right inside div then these elements will apply */
+            color:yellow;
+            background-color: green;
+            font-weight: bold;
+        }
+
+        div+p{
+            /* if p is right after div then these elements will apply */
+            color:white;
+            background-color: red;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>This tutorial is on more about selectors!</h1>
+    <div class="container">
+        <div class="row">
+            <ul>
+                <li class="item"><p>this is a special paragraph inside list</p></li>
+                <li>This will not get affected!</li>
+            </ul>
+            <p>This is a paragraph</p>
+            <p>This is another paragraph</p>
+        </div>
+    </div>
+    <p>This is outermost paragraph</p>
+</body>
+</html>

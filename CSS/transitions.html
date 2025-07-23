@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transitions</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        #box{
+            height: 200px;
+            width: 200px;
+            display: flex;
+            font-size: 16px;
+            justify-content: center;
+            align-items: center;
+            background-color: green;
+            
+            transition-property: background-color;
+            transition-duration: 2s;
+            /* transition-delay: 1s;  (this line is literally just to have a idea about else i dont think this shit has a use at all) */
+            transition-timing-function: ease-out;
+            
+            /* one liner for a transition property  */
+            transition: all 2s ease-in 0s
+            /* (property) (duration of transition) (timing function) (transition delay)  */
+            /* all in the line above the upper line means that apply the hoover CSS to all the elements added in the original #box id ; */
+        }
+        
+        #box:hover{
+            font-size: 30px;
+            background-color: pink;
+            height: 400px;
+            width: 400px;
+            border-radius: 100px;
+        }
+    </style>
+</head>
+<body>
+    <h3>This is a CSS Transitions tutorial</h3>
+    <div class="container">
+        <div id="box">
+            This is my box
+        </div>
+    </div>
+</body>
+</html>

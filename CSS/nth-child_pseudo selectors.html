@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute and nth child pseudo selectors</title>
+    <style>
+        .container{
+            display: block;
+            width: 190px;
+            margin: auto;
+        }
+        input{
+            display: block;
+        }
+
+        input[type="text"]{
+
+            padding: 20px;
+            border: 2px solid green;
+        }
+
+        a[target='blank']{
+            /* this selector will change/apply these css elements to the anchor tag which has a target set by the programmer which is set to _blank in this case; */
+            font-size: 35px;
+            color:violet;
+        }
+
+        a[target='_self']{
+            font-size: 29px;
+            color: aqua;
+        }
+
+        li:nth-child(3){
+            color: blueviolet;
+            /* this will apply css for the third child of the li tag which is a item with id item3 in this case  */
+        }
+
+        li:nth-child(3n+3){
+            color: yellow;
+        }
+        /* basically you can add any sort of function in this bracket for the single variable n and it will add css according to the function added;  */
+        li:nth-child(odd){
+            color: yellow;
+        }
+        li:nth-child(even){
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1><a href="https://www.google.com" target="_blank">Go to google</a></h1>
+        <h1><a href="https://www.facebook.com" target="_self">Go to facebook</a></h1>
+        <form action="dontknow.php" class="formControl">
+            <input type="text" placeholder="Enter your name"> 
+            <input type="password" placeholder="Enter your password"> 
+            <input type="submit" value="Submit">
+        </form>
+        <ul>
+            <li class="item" id="item1">Item1</li>
+            <li class="item" id="item2">Item2</li>
+            <li class="item" id="item3">Item3</li>
+            <li class="item" id="item4">Item4</li>
+            <li class="item" id="item5">Item5</li>
+            <li class="item" id="item5">Item5</li>
+            <li class="item" id="item5">Item5</li>
+            <li class="item" id="item5">Item5</li>
+            <li class="item" id="item5">Item5</li>
+            <li class="item" id="item5">Item5</li>
+            <li class="item" id="item5">Item5</li>
+            <li class="item" id="item5">Item5</li>
+        </ul>
+    </div>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box model</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container
+        {   
+            background-color: burlywood;
+            border: 3px solid rgb(73, 3, 15);
+            /* padding: 9px;  */
+            /*since the content written has padding on the oustside which further has a background on the outside*/
+            /* This basically encloses the content more into the centre (u can say) */
+
+            /* margin: 25px; */
+
+            /* we can set margin/padding for top right bottom left like this */
+            /* padding-top: 79px;
+            padding-bottom: 79px;
+            padding-right: 39px;
+            padding-left: 39px;
+
+            margin-top: 79px;
+            margin-bottom: 79px;
+            margin-right: 39px;
+            margin-left: 39px; */
+
+            /* padding: top right bottom left;
+            padding: 23px 56px 6px 78px; */
+
+            
+            /* padding: y(top, bottom) x(right,left); */
+            padding: 34px 19px;
+
+            /* margin: top right bottom left;
+            margin: 23px 56px 6px 78px; */
+            
+            /* margin: y(top, bottom) x(right,left); */
+            margin: 14px 19px;
+
+            border-radius: 9px;
+            width: 450px;
+
+            /* toh paath ka saaar yeh hai ki box model mei sabse andar content phir padding phir background phir margin
+            */
+
+            /* margin jo hai woh content ko bahar se adjust krti hai aur padding jo hai woh content ko andar se adjust krti hai */
+
+            /* sanskaari hore ho :)  */
+
+        }
+    </style>
+</head>
+<body>
+    <div class = container>
+    <h3>This is a box model</h3>
+    <p id="first">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum nam eaque ex, quisquam sapiente minima aliquid est tempora sunt doloribus sint dolorem odio architecto eligendi quas enim rem.</p>
+    </div>
+
+    <div class = container>
+    <h3>This is a box model</h3>
+    <p id="second">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum nam eaque ex, quisquam sapiente minima aliquid est tempora sunt doloribus sint dolorem odio architecto eligendi quas enim rem.</p>
+    </div>
+
+    <div class = container>
+    <h3>This is a box model</h3>
+    <p id="third">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum nam eaque ex, quisquam sapiente minima aliquid est tempora sunt doloribus sint dolorem odio architecto eligendi quas enim rem.</p>
+    </div>
+</body>
+</html>
